@@ -17,6 +17,20 @@ This repo contains **Executable notebooks** for the five main project chapters o
 
 ## Getting Started
 
+### Modernized DNA chapter
+
+`chapter_3_dna.ipynb` now uses the matching `dlfb` 0.2 source snapshot and locked
+Python 3.12/3.13 dependencies. While unpublished, open the local notebook in Colab
+and upload `dlfb-dna-modernized.zip` when its setup cell asks. The existing Colab
+badge above points to the upstream edition, not this refactor.
+
+Restart the runtime once after dependency installation, then continue with data
+provisioning. DNA batching uses NumPy; the book's models, losses, optimizers,
+interpretation examples, and section order are preserved. New checkpoints go to
+`dna/models-modern/`. The other chapters remain on their original setup flow and
+have not been migrated. See the matching library README for test commands and
+checkpoint compatibility details.
+
 You can run the notebooks directly on **Google Colab** and select a GPU backend (usage limits apply). Simply visit [colab](https://colab.research.google.com/) and upload one of the notebook files in `./notebooks`.
 
 ℹ️ Instructions on how to run the notebooks in more controlled environments will be added in the future.
