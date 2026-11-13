@@ -70,3 +70,7 @@ Or more plainly as "Ravarani & Latysheva, Deep Learning for Biology, O’Reilly 
 Occasionally you will need to _Restart Session_ in the Runtime dropdown if an import is not working as expected (e.g. `numpy`). This has been an issue for some users in Chapter 2, where loading the EsmModel would give this error `ImportError: cannot import name '_center' from 'numpy._core.umath' (/usr/local/lib/python3.12/dist-packages/numpy/_core/umath.py)`. Restarting and running cells again fixes the issue.
 
 ![Chapter 2 numpy issue](assets/chapter2_numpy_issue.png)
+
+### Modernized protein chapter
+
+Chapter 2 now uses the matching `dlfb-proteins-modernized.zip` snapshot, NumPy batching, and explicit CPU/GPU Torch profiles. Open the local notebook; the upstream Colab badge points at the original edition. See the library’s PROTEINS.md for validation scope.
